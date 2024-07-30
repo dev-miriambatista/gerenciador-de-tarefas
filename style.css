@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rosybrown;
+    font-family:Arial;
+
+}
+main{
+    margin:2%;
+}
+
+main h1{
+    font: normal bolder 1em "arial;"
+}
+
+fieldset{
+    border:solid 1px black;
+    padding:0.5%;
+}
+
+header{
+    background-color: antiquewhite;
+    border-radius:1em;
+    text-align: center;
+    margin: 2%;
+    padding:2%;
+}
+
+header h1{
+    border-bottom: 1em;
+}
+
+main legend{
+    font:normal bold 1em "arial";
+}
+
+
+
+
+ 

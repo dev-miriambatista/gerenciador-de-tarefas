@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerenciador de Tarefas</title>
+</head>
+<body>
+<header>
+    <h1>Gerenciador de Tarefas</h1>
+</header>
+
+<main>
+
+    <fieldset>
+        <legend>Nova Tarefa</legend>
+        <section class="container">
+            <form action="cadastro.php" method="post"></form>
+            <fieldset>
+                <p>
+                    <label for="input">
+                        <legend>Tarefa:</legend>
+                    </label>
+                    <input type="text" name="n1" id="in1" min="0" max="500" required
+                           oninput="Text">
+                </p>
+            </fieldset>
+            <fieldset>
+                <p>
+                    <label for="input">
+                        <legend>Descrição (Opcional):</legend>
+                    </label>
+                    <input type="text" name="n1" id="in1" min="0" max="500" required
+                           oninput="Text">
+                </p>
+            </fieldset>
+            <fieldset>
+                <p>
+                    <label for="input">
+                        <legend>Prazo(Opcional):</legend>
+                    </label>
+                    <label for="idia"></label>
+                    <input type="date" name="dia" id="idia" value="09/04/2024" required>
+                </p>
+            </fieldset>
+            <fieldset>
+                <p>
+                    <legend>Prioridade:</legend>
+                    <label for="iniv">Baixa | Média | Alta</label>
+                    <input type="range" name="status" id="iniv" min="1" max="3" value="1">
+                </p>
+
+                <fieldset>
+                    <legend>Status</legend>
+
+                    <input type="radio" name="sx" id="isxmas"> <label for="isxmas">Não iniciada</label>
+
+                    <input type="radio" name="sx" id="isxfem"> <label for="isxfem">Em andamento</label>
+                    <input type="radio" name="sx" id="isxfem"> <label for="isxfem">Concluída</label>
+
+                </fieldset>
+
+                <p>Lembrete por e-mail:</p>
+                <p>
+                    <label for="iemail">Email:</label>
+                    <input type="email" name="email" id="iemail" required placeholder="exemplo@exemplo.com.br">
+                </p>
+
+                <p>
+                    <input type="submit" value="CADASTRAR">
+                </p>
+            </fieldset>
+
+        </section>
+
+
+        <table>
+            <colgroup>
+                <col class="tarefas">
+                <col class="descrição">
+                <col class="prazo">
+                <col class="prioridade">
+                <col class="concluída">
+                <col class="opções">
+            </colgroup>
+            <tr>
+                <th scope="col">Tarefas</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Prazo</th>
+                <th scope="col">Prioridade</th>
+                <th scope="col">Concluída</th>
+                <th scope="col">Opções</th>
+            </tr>
+            <tr>
+                <td>Tarefa 4</td>
+                <td>Descrição</td>
+                <td>Prazo</td>
+                <td>Prioridade</td>
+                <td>Concluída</td>
+                <td>Opções</td>
+            </tr>
+            <tr>
+                <td>Tarefa 4</td>
+                <td>Descrição</td>
+                <td>Prazo</td>
+                <td>Prioridade</td>
+                <td>Concluída</td>
+                <td>Opções</td>
+            </tr>
+            <tr>
+                <td>Tarefa 4</td>
+                <td>Descrição</td>
+                <td>Prazo</td>
+                <td>Prioridade</td>
+                <td>Concluída</td>
+                <td>Opções</td>
+            </tr>
+            <tr>
+                <td>Tarefa 4</td>
+                <td>Descrição</td>
+                <td>Prazo</td>
+                <td>Prioridade</td>
+                <td>Concluída</td>
+                <td>Opções</td>
+            </tr>
+</main>
+
+</body>
+</html>
