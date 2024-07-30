@@ -18,40 +18,40 @@
             <form action="cadastro.php" method="post"></form>
             <fieldset>
                 <p>
-                    <label for="input">
+                    <label for="tarefa">
                         <legend>Tarefa:</legend>
                     </label>
-                    <input type="text" name="n1" id="in1" min="0" max="500" required
+                    <input type="text" name="n1" id="tarefa" min="0" max="500"
                            oninput="Text">
                 </p>
             </fieldset>
             <fieldset>
                 <p>
-                    <label for="input">
+                    <label for="descricao">
                         <legend>Descrição (Opcional):</legend>
                     </label>
-                    <input type="text" name="n1" id="in1" min="0" max="500" required
+                    <input type="text" name="n1" id="descricao" min="0" max="500"
                            oninput="Text">
                 </p>
             </fieldset>
             <fieldset>
                 <p>
-                    <label for="input">
+                    <label for="prazo">
                         <legend>Prazo(Opcional):</legend>
                     </label>
                     <label for="idia"></label>
-                    <input type="date" name="dia" id="idia" value="09/04/2024" required>
+                    <input type="date" name="dia" id="prazo" value="09/04/2024" required>
                 </p>
             </fieldset>
             <fieldset>
                 <p>
-                    <legend>Prioridade:</legend>
+                    <legend id="priori">Prioridade:</legend>
                     <label for="iniv">Baixa | Média | Alta</label>
-                    <input type="range" name="status" id="iniv" min="1" max="3" value="1">
+                    <input type="range" name="status" id="priori" min="1" max="3" value="1">
                 </p>
-
+            </fieldset>
                 <fieldset>
-                    <legend>Status</legend>
+                    <legend id="status">Status</legend>
 
                     <input type="radio" name="sx" id="isxmas"> <label for="isxmas">Não iniciada</label>
 
@@ -59,16 +59,18 @@
                     <input type="radio" name="sx" id="isxfem"> <label for="isxfem">Concluída</label>
 
                 </fieldset>
-
-                <p>Lembrete por e-mail:</p>
-                <p>
+                <fieldset>
+                <legend>Lembrete por e-mail:</legend>
+                <p id="email">
                     <label for="iemail">Email:</label>
                     <input type="email" name="email" id="iemail" required placeholder="exemplo@exemplo.com.br">
                 </p>
-
-                <p>
-                    <input type="submit" value="CADASTRAR">
-                </p>
+            </fieldset>
+                <div id="botao">
+                    <p>
+                        <input id="cad" type="submit"  value="CADASTRAR">
+                    </p>
+                </div>
             </fieldset>
 
         </section>
