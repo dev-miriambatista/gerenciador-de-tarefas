@@ -1,54 +1,92 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
-
+    border-radius: 0.5em;
 }
 
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: rosybrown;
-    font-family:Arial;
-
+    background-color: rgb(250, 250, 250);
+    font-family:arial;
 }
 
-fieldset{
-    border:solid 1px black;
-    padding:0.5%;
-}
-
-header{
-    background-color: antiquewhite;
-    border-radius:1em;
+header {
+    background-color:#bea2a2;
+    width: 85vw;
+    height: 9vh;
+    border-radius: 1em;
     text-align: center;
-    margin: 2%;
-    padding:2%;
+    margin-top: 1%;
+    padding: 1%;
 }
 
-header h1{
+header h1 {
     border-bottom: 1em;
 }
 
-header p{
-
+main {
+    width: 85vw;
+    height: 7vh;
+    margin: 0 2%;
 }
 
-main{
-    margin:2%;
-
+main h1 {
+    font: normal bolder 1em "arial;";
 }
 
-main h1{
-    font: normal bolder 1em "arial;"
+main legend {
+    font: normal bold 1em "arial";
 }
 
-main legend{
-    font:normal bold 1em "arial";
+fieldset {
+    border: solid 1px black;
+    padding: 0.5%;
+    margin: 1%;
+    border-radius: 1em;
 }
+legend {
+    padding: 0.5%;
+}
+
 input{
-
+    background-color:#bea2a2;
+    height: 3vh;
+    font: normal bolder 1em "arial";
 }
 
+#tarefa, #descricao, #iemail{
+    width: 90%;
+    border-radius: 0.5em;
+}
 
+#botao{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1%;
+}
 
+#cad{
+    display: flex;
+    align-items: end;
+    margin: 1%;
+    padding: 1%;
+    font:normal bolder 0.9em "arial";
+    height: 6vh;
+    width: 10vw;
+}
 
+#email{
+    padding: 1%;
+}
+
+#ninicia,
+#emandam,
+#conclui{
+    margin:2%;
+}

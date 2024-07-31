@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
@@ -15,115 +15,116 @@
     <fieldset>
         <legend>Nova Tarefa</legend>
         <section class="container">
-            <form action="cadastro.php" method="post"></form>
-            <fieldset>
-                <p>
-                    <label for="input">
+            <form action="tarefa.php" method="post"></form>
+            <p>
+                <label for="tarefa">
+                    <fieldset>
                         <legend>Tarefa:</legend>
-                    </label>
-                    <input type="text" name="n1" id="in1" min="0" max="500" required
-                           oninput="Text">
-                </p>
-            </fieldset>
+                </label>
+                <input type="text" name="n1" id="tarefa" min="0" max="500"
+                       oninput="text">
+            </p>
+    </fieldset>
+    <p>
+        <label for="descricao">
             <fieldset>
-                <p>
-                    <label for="input">
-                        <legend>Descrição (Opcional):</legend>
-                    </label>
-                    <input type="text" name="n1" id="in1" min="0" max="500" required
-                           oninput="Text">
-                </p>
-            </fieldset>
+                <legend>Descrição (Opcional):</legend>
+        </label>
+        <input type="text" name="n1" id="descricao" min="0" max="500"
+               oninput="text">
+    </p>
+    </fieldset>
+
+    <p>
+        <label for="prazo">
             <fieldset>
-                <p>
-                    <label for="input">
-                        <legend>Prazo(Opcional):</legend>
-                    </label>
-                    <label for="idia"></label>
-                    <input type="date" name="dia" id="idia" value="09/04/2024" required>
-                </p>
-            </fieldset>
-            <fieldset>
-                <p>
-                    <legend>Prioridade:</legend>
-                    <label for="iniv">Baixa | Média | Alta</label>
-                    <input type="range" name="status" id="iniv" min="1" max="3" value="1">
-                </p>
+                <legend>Prazo(Opcional):</legend>
+        </label>
+        <label for="idia"></label>
+        <input type="date" name="dia" id="prazo" value="09/04/2024" required>
+    </p>
+    </fieldset>
 
-                <fieldset>
-                    <legend>Status</legend>
+    <p>
+    <fieldset>
+        <legend id="priori">Prioridade:</legend>
+        <label for="iniv">Baixa | Média | Alta</label>
+        <input type="range" name="status" id="priori" min="1" max="3" value="1">
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend id="status">Status</legend>
 
-                    <input type="radio" name="sx" id="isxmas"> <label for="isxmas">Não iniciada</label>
+        <input type="radio" name="sx" id="ninicia"> <label for="ninicia">Não iniciada</label>
+        <input type="radio" name="sx" id="emandam"> <label for="emandam">Em andamento</label>
+        <input type="radio" name="sx" id="conclui"> <label for="conclui">Concluída</label>
 
-                    <input type="radio" name="sx" id="isxfem"> <label for="isxfem">Em andamento</label>
-                    <input type="radio" name="sx" id="isxfem"> <label for="isxfem">Concluída</label>
+    </fieldset>
+    <fieldset>
+        <legend>Lembrete por e-mail:</legend>
+        <input type="radio" name="sx" id="emandam"> <label for="emandam">Não</label>
+        <input type="radio" name="sx" id="conclui"> <label for="conclui">Sim</label>
+        <p id="email">
+            <label for="iemail">Email:</label>
+            <input type="email" name="email" id="iemail" required placeholder="exemplo@exemplo.com.br">
+        </p>
+    </fieldset>
+    <div id="botao">
+        <p>
+            <input id="cad" type="submit" value="CADASTRAR">
+        </p>
+    </div>
+    </fieldset>
+    </section>
 
-                </fieldset>
 
-                <p>Lembrete por e-mail:</p>
-                <p>
-                    <label for="iemail">Email:</label>
-                    <input type="email" name="email" id="iemail" required placeholder="exemplo@exemplo.com.br">
-                </p>
+    <table>
+        <thead>
+        <tr>
+            <th scope="col">Tarefas</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Prazo</th>
+            <th scope="col">Prioridade</th>
+            <th scope="col">Concluída</th>
+            <th scope="col">Opções</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Tarefa 1</td>
+            <td>Descrição</td>
+            <td>Prazo</td>
+            <td>Prioridade</td>
+            <td>Concluída</td>
+            <td>Opções</td>
+        </tr>
+        <tr>
+            <td>Tarefa 2</td>
+            <td>Descrição</td>
+            <td>Prazo</td>
+            <td>Prioridade</td>
+            <td>Concluída</td>
+            <td>Opções</td>
+        </tr>
+        <tr>
+            <td>Tarefa 3</td>
+            <td>Descrição</td>
+            <td>Prazo</td>
+            <td>Prioridade</td>
+            <td>Concluída</td>
+            <td>Opções</td>
+        </tr>
+        <tr>
+            <td>Tarefa 4</td>
+            <td>Descrição</td>
+            <td>Prazo</td>
+            <td>Prioridade</td>
+            <td>Concluída</td>
+            <td>Opções</td>
+        </tr>
 
-                <p>
-                    <input type="submit" value="CADASTRAR">
-                </p>
-            </fieldset>
-
-        </section>
-
-
-        <table>
-            <colgroup>
-                <col class="tarefas">
-                <col class="descrição">
-                <col class="prazo">
-                <col class="prioridade">
-                <col class="concluída">
-                <col class="opções">
-            </colgroup>
-            <tr>
-                <th scope="col">Tarefas</th>
-                <th scope="col">Descrição</th>
-                <th scope="col">Prazo</th>
-                <th scope="col">Prioridade</th>
-                <th scope="col">Concluída</th>
-                <th scope="col">Opções</th>
-            </tr>
-            <tr>
-                <td>Tarefa 4</td>
-                <td>Descrição</td>
-                <td>Prazo</td>
-                <td>Prioridade</td>
-                <td>Concluída</td>
-                <td>Opções</td>
-            </tr>
-            <tr>
-                <td>Tarefa 4</td>
-                <td>Descrição</td>
-                <td>Prazo</td>
-                <td>Prioridade</td>
-                <td>Concluída</td>
-                <td>Opções</td>
-            </tr>
-            <tr>
-                <td>Tarefa 4</td>
-                <td>Descrição</td>
-                <td>Prazo</td>
-                <td>Prioridade</td>
-                <td>Concluída</td>
-                <td>Opções</td>
-            </tr>
-            <tr>
-                <td>Tarefa 4</td>
-                <td>Descrição</td>
-                <td>Prazo</td>
-                <td>Prioridade</td>
-                <td>Concluída</td>
-                <td>Opções</td>
-            </tr>
+        </tbody>
+    </table>
 </main>
-
 </body>
 </html>
